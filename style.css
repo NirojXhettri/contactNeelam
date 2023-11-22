@@ -1,0 +1,85 @@
+body {
+    background-color: #fff;
+    color: #fff;
+    background-image: url('neelam.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: fff;
+    border-radius: 5px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent; /* Set the form background to transparent */
+}
+
+label, input, textarea {
+    margin-bottom: 10px;
+}
+
+body.night-mode {
+    background-color: #fff;
+    color: #fff;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: transparent;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    #container {
+        max-width: 100%;
+    }
+}
+
+.mode-switch {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+#night-mode-switch {
+    display: none;
+}
+
+#night-mode-switch + label {
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#night-mode-switch:checked + label {
+    background-color: #fff;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
